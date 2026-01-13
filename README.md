@@ -1,16 +1,37 @@
 # home_repair_app
 
-A new Flutter project.
+This project has been tested on Android with Flutter version 3.32.8.
 
-## Getting Started
+The project is built using https://pub.dev/packages/ar_flutter_plugin_2 which is in turn a adaptation of  https://github.com/SceneView/sceneview-android
 
-This project is a starting point for a Flutter application.
+The initial idea was to build it as a native Android project using Jetpack Compose, but due to time constraints and quite a bit of trouble
+getting things to work some things were simplified and abstracted away.
 
-A few resources to get you started if this is your first Flutter project:
+The initial idea was to try to record the session from SceneView, but after many tries this failed, so a simpler solution was adapted, where interest
+points from the sceneview could be marked and screenshots would be taken of these interest points. Afterwards the user has the option to add comments
+to clarify the images taken. At the moment there is no caching so the data only lives until the current app session is live.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+A wiser man would have taken the easier road and tried to implement this using RoomPlan SDK on iOS, alas I am not a wise man.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run me:
+
+Install Flutter and Android studio.
+
+To make sure everything is installed nicely run:
+
+flutter doctor -v
+
+If all ok run to run the necessary code generation
+dart run build_runner watch -d
+
+If you have a phone connected to the computer (developer mode ON!) run:
+
+flutter run
+
+Enjoy!
+
+
+Links:
+
+https://docs.flutter.dev/get-started/quick
+https://docs.flutter.dev/platform-integration/android/setup
