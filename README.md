@@ -1,6 +1,8 @@
 # home_repair_app
 
 This project has been tested on Android with Flutter version 3.32.8.
+The project does build on iOS as well (tested on iOS iPhone 12, iOS version 18.6.2), but the screenshots are not rendered, so use Android to get the
+full experience.
 
 The project is built using https://pub.dev/packages/ar_flutter_plugin_2 which is in turn a adaptation of  https://github.com/SceneView/sceneview-android
 
